@@ -1,0 +1,4 @@
+pandas>=1.3.5
+streamlit>=1.12.0
+plotly
+plotly.express
