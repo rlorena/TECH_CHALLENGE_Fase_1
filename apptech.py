@@ -221,7 +221,7 @@ with tab1:
 
 #Gráfico de linha Valor 5 maiores
                 fig =px.line(df_valor,  x=df_valor.index, y=df_valor.columns,markers=True,template='plotly_white',
-                title='Totais em US$ de vinhos exportados aos 5 maiores importadores.',width = 800)
+                title='Totais em US$ de vinhos exportados aos 5 maiores importadores.',width = 700)
                 fig.update_xaxes(title='Ano')
                 fig.update_yaxes(title='Valor (US$)')
                 fig.show()
@@ -238,7 +238,7 @@ with tab1:
 
 #Gráfico de linhas demonstrando a quantidade e o valor exportado do período
                 fig =px.line(df3, x=df3.index ,y=df3.columns,markers=True,template='plotly_white',
-                title='Exportações brasileiras por período.',width = 800)
+                title='Exportações brasileiras por período.',width = 700)
                 fig.update_xaxes(title='Ano')
                 fig.update_yaxes(title='Valor (US$)')
                 fig.show()
