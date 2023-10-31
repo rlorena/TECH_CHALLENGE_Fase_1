@@ -201,7 +201,7 @@ with tab1:
        
 #Gráfico de barras demonstrando a quantidade e o valor exportado do período
         fig = px.bar(df3, x=df3.index, y=df3.columns, barmode="group",template='plotly_white')
-        fig.update_layout(title='Quantidade e valor total exportado.(2008 a 2022)', width = 1200)
+        fig.update_layout(title='Quantidade e valor total exportado.(2008 a 2022)', width = 1400)
         fig.update_xaxes(title_text="Ano")
         fig.update_yaxes(title_text="Valor")
         fig.show()
@@ -255,7 +255,7 @@ with tab1:
 
 #Gráfico de scatter
         fig=px.scatter(df_vinhos_totais,  x='Qtd Total (L)', y='Valor Total (US$)', 
-                log_x=True, log_y=True,width = 1200, opacity=0.8, template='plotly_white')
+                log_x=True, log_y=True,width = 1400, opacity=0.8, template='plotly_white')
         fig.update_traces(marker = dict(size = 10, line=dict(width = 1)), selector = dict(mode = 'markers'))
         fig.update_layout(title='Dispersão das exportações no período.')
         fig.update_xaxes(title='Quantidade(L)')
